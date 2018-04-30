@@ -1,6 +1,6 @@
-# geocoder
+# Geocoder (in Crystal)
 
-Simplest possible geocoder. Uses Google's Geocoding API, which you can get for free to start.
+Simplest possible geocoder shard for Crystal. Uses Google's Geocoding API, which you can get for free to start.
 
 Get your API here: https://developers.google.com/maps/documentation/geocoding/get-api-key
 
@@ -32,4 +32,4 @@ puts res.address
 
 ## Contributors
 
-- [andre](https://github.com/andre) Andre Lewis - creator, maintainer
+- [Andre Lewis](https://github.com/andre)  - creator
