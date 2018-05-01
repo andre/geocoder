@@ -21,14 +21,25 @@ require "geocoder"
 
 g = Geocoder::GoogleGeocoder.new(YOUR_GOOGLE_API_KEY")
 res = g.geocode("100 Main st, Denver, CO")
-puts res.lat
-  ... 
-puts res.lng
-  ...
 puts res.address
-  ...
+puts res.lat
+puts res.lng
+
 ```
 
+### Check the `success` method (returns true | false)
+```crystal
+puts res.success
+```
+
+### Multiple results are accessed via the `all_results` method:
+
+```crystal
+res = g.geocode("100 Main st")
+all = res.all_results
+puts all[0].address
+puts all[1].address
+```
 
 ## Contributors
 
