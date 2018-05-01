@@ -44,3 +44,5 @@ puts all[1].address
 ## Contributors
 
 - [Andre Lewis](https://github.com/andre)  - creator
+
+[![Build Status](https://travis-ci.org/andre/geocoder.svg?branch=master)](https://travis-ci.org/andre/geocoder)
