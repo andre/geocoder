@@ -1,10 +1,6 @@
 require "./spec_helper"
-require "./fixtures"
-require "webmock" # See https://github.com/manastech/webmock.cr
 
-# TODO: figure out a better way to do fixtures other than constants defined in fixtures file
-
-describe Geocoder do
+describe Geocoder::GoogleGeocoder do
   Spec.before_each &->WebMock.reset
 
   it "returns address" do
